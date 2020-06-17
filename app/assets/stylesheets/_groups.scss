@@ -1,0 +1,76 @@
+*{
+  border: 1px solid;
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  height: 100%;
+}
+
+.wrapper{
+  display: flex;
+  height: 100%;
+  // width: 100vw;
+
+}
+
+.side_bar{
+  height: 100%;
+  width: 150px;
+}
+
+.user{
+  height: 100px;
+  padding-left: 10px;
+
+  &__name{
+    font-size: 16px;
+    padding-top: 10px;
+  }
+
+  &__config{
+    font-size: 8px;
+  }
+
+  &__signout{
+    font-size: 8px;
+  }
+}
+
+.personal-event{
+  height: calc(100% - 100px);
+}
+
+.new-event{
+  font-size: 13px;
+  padding-left: 10px;
+}
+
+.event{
+  height: 50px;
+  padding: 0 0 10px 15px;
+
+  &__name{
+    font-size: 14px;
+  }
+
+  &__date{
+    font-size: 10px;
+  }
+}
+
+.main-screen{
+  height: 100%;
+  width: calc(100vw - 150px);
+}
+
+.search{
+  height: 100px;
+}
+
+.tennis-list{
+  height: calc(100% - 100px);
+}
