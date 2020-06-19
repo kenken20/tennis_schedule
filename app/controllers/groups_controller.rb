@@ -1,7 +1,7 @@
 class GroupsController < ApplicationController
 before_action :authenticate_user!
   def index
-    @groups = Group.all
+    @groups = Group.all.order("event_date DESC")
   end
 
   def new

@@ -10,13 +10,9 @@
     .new-event
       = link_to new_group_path do
         新規の予定を作成する
-    .event
-      .event__name
-        test
-      .event__date
-        20xx
-    .event
-      .event__name
-        test
-      .event__date
-        20xx
+    - @groups.each do |group|
+      .event
+        .event__name
+          = group.name
+        .event__date
+          = group.event_date
