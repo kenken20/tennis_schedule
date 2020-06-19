@@ -1,0 +1,9 @@
+イベント作成(※空白箇所があると保存されません)
+%ul
+  = form_with model: @group, class: :form, local: true do |form|
+    %li
+      = form.text_field :name, placeholder: :イベント名・開催場所, class: :form
+    %li
+      = form.datetime_field :event_date, class: :form
+    %li
+      = form.submit '作成', class: :form
