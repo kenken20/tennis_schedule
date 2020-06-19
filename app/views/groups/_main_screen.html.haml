@@ -2,4 +2,9 @@
   .search
     test
   .tennis-list
-    test
+    -@groups.each do |group|
+      .event
+        .event__name
+          = group.name
+        .event__date
+          = group.event_date
